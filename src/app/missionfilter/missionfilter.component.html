@@ -1,4 +1,5 @@
-<select [(ngModel)]="selectedYear" (change)="onYearChange()">
+<label for="yearSelect">Select a Year:</label>
+<select id="yearSelect" [(ngModel)]="selectedYear" (change)="onYearChange()">
   <option value="">Select a Year</option>
   <option *ngFor="let year of ['2020', '2021', '2022', '2023']" [value]="year">
     {{ year }}
